@@ -1,1 +1,1 @@
-The primary page is login.index
+The primary page is login.html
