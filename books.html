@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category of Books</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .nav {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            text-decoration: underline;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .logout {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .logout a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Category of Books </h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Code No From</th>
+                <th>Code No To</th>
+                <th>Category</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>SC(B/M)000001</td>
+                <td>SC(B/M)000004</td>
+                <td>Science</td>
+            </tr>
+            <tr>
+                <td>EC(B/M)000001</td>
+                <td>EC(B/M)000004</td>
+                <td>Economics</td>
+            </tr>
+            <tr>
+                <td>FC(B/M)000001</td>
+                <td>FC(B/M)000004</td>
+                <td>Fiction</td>
+            </tr>
+            <tr>
+                <td>CH(B/M)000001</td>
+                <td>CH(B/M)000004</td>
+                <td>Children</td>
+            </tr>
+            <tr>
+                <td>PD(B/M)000001</td>
+                <td>PD(B/M)000004</td>
+                <td>Personal Development</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="logout">
+        <a href="login.html">Log Out</a>
+    </div>
+</div>
+
+</body>
+</html>

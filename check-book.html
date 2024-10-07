@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Book Availability</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="chart.html">Chart</a></li>
+            <li><a href="transaction.html">Transactions</a></li>
+            <li><a href="home.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <h2>Transactions</h2>
+
+    <div class="transaction-options">
+        <table class="transaction-table">
+            <tbody>
+                <tr>
+                    <td>Is book available?</td>
+                    <td>
+                        <input type="text" id="bookTitle" placeholder="Enter Book Name">
+                    </td>
+                    <td>
+                        <button id="checkAvailabilityButton">Check Availability</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Issue book?</td>
+                    <td>
+                        <input type="text" id="issueBookName" placeholder="Enter Book Name">
+                    </td>
+                    <td>
+                        <button id="issueBookButton">Issue</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Return book?</td>
+                    <td>
+                        <input type="text" id="returnBookName" placeholder="Enter Book Name">
+                    </td>
+                    <td>
+                        <button id="returnBookButton">Return</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Pay Fine?</td>
+                    <td>
+                        <input type="text" id="fineAmount" placeholder="Enter Fine Amount">
+                    </td>
+                    <td>
+                        <button id="payFineButton">Pay Fine</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div id="resultMessage"></div>
+    </div>
+
+    <div class="logout-container">
+        <a href="login.html">Log Out</a>
+    </div>
+
+    <script>
+        document.getElementById('checkAvailabilityButton').addEventListener('click', function() {
+            const bookTitle = document.getElementById('bookTitle').value;
+            const resultDiv = document.getElementById('resultMessage');
+            // Simulating availability check (this can be replaced with an API call)
+            const isAvailable = Math.random() > 0.5; // Randomly simulate availability
+            resultDiv.innerHTML = isAvailable ? 
+                `The book "<strong>${bookTitle}</strong>" is available.` : 
+                `The book "<strong>${bookTitle}</strong>" is not available.`;
+        });
+
+        // Add similar event listeners for issuing books and paying fines as needed
+    </script>
+</body>
+</html>
